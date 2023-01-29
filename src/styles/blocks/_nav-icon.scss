@@ -1,0 +1,67 @@
+.nav-icon-wrapper {
+    width: $nav-icon-width;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.nav-icon {
+    display: block;
+    position: relative;
+    width: $nav-icon-width;
+    height: $nav-icon-height;
+    background-color: $nav-icon-color;
+    transition: background-color .2s ease-in;
+}
+
+.nav-icon::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 0;
+    width: $nav-icon-width;
+    height: $nav-icon-height;
+    background-color: $nav-icon-color;
+    transition: transform .2s ease-in,top .2s linear .2s,background-color .2s ease-in;
+}
+
+.nav-icon::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: $nav-icon-width-sm;
+    height: $nav-icon-height;
+    background-color: $nav-icon-color;
+    transition: transform .2s ease-in,top .2s linear .2s,background-color .2s ease-in;
+}
+
+.nav-icon--active {
+    background-color: transparent !important;
+
+    &::before {
+        transform: rotate(45deg);
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+        width: $nav-icon-width;
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+}
+
+.nav-icon.nav-icon--active{
+    position: fixed;
+    z-index: 999;
+}
+
+.nav-icon-wrapper.nav-wrapper--active{
+    position: fixed;
+    z-index: 999;
+}

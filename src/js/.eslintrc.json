@@ -1,0 +1,19 @@
+{
+    "extends": [
+        "htmlacademy/es6"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "quotes": [
+            "error",
+            "backtick"
+        ]
+    }
+}

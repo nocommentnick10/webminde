@@ -1,0 +1,31 @@
+.header-top{
+    padding-top: 27px;
+    margin-bottom: 40px;
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.header-top__logo{
+    img{
+        width: 87px;
+    }
+}
+
+.header-top__content{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.header-top__answer{
+    padding: 4px;
+    background-color: $answer-bg;
+
+    img{
+        width: 19px;
+    }
+}

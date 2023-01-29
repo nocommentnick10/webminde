@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "eslint-config-htmlacademy": "^8.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.11",
+    "gulp-clean": "^0.4.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-npm-dist": "^1.0.4",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-tinypng-compress": "^1.2.5",
+    "gulp-tinypng-extended": "^3.0.3",
+    "path": "^0.12.7"
+  }
+}
